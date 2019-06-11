@@ -49,11 +49,16 @@ public abstract class BaseTest  {
 
     /**
      * This method runs before any other method.
+        on hub run below commands
+     *java -jar selenium-server-standalone-3.141.59.jar -role hub
+     *  on node 
+     *java -jar selenium-server-standalone-3.141.59.jar -role node –hub http://192.168.0.167:4444/wd/hub -nodeConfig nodeconfig.json
      *
+     nodeco nfig.json
+     
+     { "capabilities": [ { "browserName": "chrome", "maxInstances": 5, "platform": "WINDOWS", "webdriver.chrome.driver": "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe" ,"version":"android"}]}
      * 
-     *
-     *
-     * We do not need to and SHOULD NOT set our own DesiredCapabilities
+     We do not need to and SHOULD NOT set our own DesiredCapabilities
      * Hub and nodes are setup and running using these commands 
      * .
      *
